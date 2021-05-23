@@ -1,3 +1,4 @@
+import {getToList} from "./jsFunctions.js";
 export const mainDiv = document.querySelector("#mainDiv");
 export const mainForm = document.createElement("form");
 mainForm.classList.add("mainForm");
@@ -8,3 +9,4 @@ mainForm.prepend(mainInput);
 
 export const checkedList = document.createElement("div");
 checkedList.id = "checked_main";
+checkedList.getToList;
