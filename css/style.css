@@ -338,7 +338,7 @@ template {
   display: none;
 }
 
-#mainDiv {
+.mainDiv {
   margin-top: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -347,7 +347,7 @@ template {
       justify-content: space-around;
 }
 
-#checked_main {
+.checked_main {
   width: 300px;
   height: auto;
   background-color: #aca5a5;
@@ -373,7 +373,7 @@ template {
   padding-left: 20px;
 }
 
-#checked_main :last-child {
+.checked_main :last-child {
   margin-bottom: 0px;
 }
 

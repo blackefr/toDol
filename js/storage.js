@@ -1,0 +1,11 @@
+export const startProjectClass = "mainDiv";
+export const checked_main = "checked_main";
+export const checked_name = "checked_name";
+export const buttonOfDel = "delButton";
+export const inputToList = "main_input";
+export const inputFormToList = "fromFormToList";
+export const textAt = "text";
+export const divEl = "div";
+export const inputEl = "input";
+export const formEl = "form";
+export const buttonEl = "button";

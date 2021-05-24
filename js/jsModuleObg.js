@@ -1,12 +1,25 @@
-import {getToList} from "./jsFunctions.js";
-export const mainDiv = document.querySelector("#mainDiv");
-export const mainForm = document.createElement("form");
-mainForm.classList.add("mainForm");
-const mainInput = document.createElement("input");
-mainInput.setAttribute("type", "text");
-mainInput.id = "main_input";
+import { getToList } from "./jsFunctions.js";
+import {
+  checked_main,
+  divEl,
+  formEl,
+  inputEl,
+  inputFormToList,
+  inputToList,
+  startProjectClass,
+  textAt,
+} from "./storage.js";
+
+export const mainDiv = document.querySelector(`.${startProjectClass}`);
+
+export const mainForm = document.createElement(formEl);
+mainForm.className = inputFormToList;
+
+export const mainInput = document.createElement(inputEl);
+mainInput.type = textAt;
+mainInput.className = inputToList;
 mainForm.prepend(mainInput);
 
-export const checkedList = document.createElement("div");
-checkedList.id = "checked_main";
+export const checkedList = document.createElement(divEl);
+checkedList.className = checked_main;
 checkedList.getToList;
