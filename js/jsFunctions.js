@@ -4,7 +4,7 @@ import { checked_name, buttonOfDel, divEl, buttonEl } from "./storage.js";
 
 export const getToList = addEventListener(keydown, function (event) {
   if (event.target == mainInput && event.key == "Enter") {
-    event.preventDefault();
+
     toListValue(event);
   }
   return;
@@ -19,6 +19,7 @@ const toListValue = (event) => {
       checkedList.removeChild(listedValue);
     });
     listedValue.append(delListedButton);
+    event.preventDefault();
     event.target.value = "";
     return listedValue;
   } else {

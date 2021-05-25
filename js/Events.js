@@ -1,2 +1,2 @@
 export const keydown = "keydown";
-export const click = "cklick";
+export const click = "click";
