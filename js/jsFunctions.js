@@ -12,6 +12,7 @@ export const getToList = addEventListener(keydown, function (event) {
 
 const toListValue = (event) => {
   if (event.target.value != "") {
+    event.preventDefault();
     const listedValue = inputValue(event);
     const delListedButton = delButGen();
     checkedList.prepend(listedValue);
@@ -19,7 +20,6 @@ const toListValue = (event) => {
       checkedList.removeChild(listedValue);
     });
     listedValue.append(delListedButton);
-    event.preventDefault();
     event.target.value = "";
     return listedValue;
   } else {

@@ -9,7 +9,16 @@
 }
 
 .checked_main {
-  width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 300px;
+  max-width: 500px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: auto;
   height: auto;
   background-color: #aca5a5;
   border: 2px solid rgba(187, 187, 181, 0.59);
@@ -20,6 +29,14 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  word-break: break-all;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -48,7 +65,7 @@
       -ms-flex-align: center;
           align-items: center;
   padding-bottom: 4px;
-  margin-right: 20px;
+  margin: 0px 20px;
   width: 20px;
   height: 20px;
   border: 1px solid blue;
