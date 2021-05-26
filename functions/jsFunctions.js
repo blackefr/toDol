@@ -1,10 +1,14 @@
-import { click, keydown } from "./Events.js";
-import { checkedList, mainInput } from "./jsModuleObg.js";
-import { checked_name, buttonOfDel, divEl, buttonEl } from "./storage.js";
+import { click, keydown } from "../events/events.js";
+import { checkedList, mainInput } from "../todoForm/inputListForm.js";
+import {
+  checked_name,
+  buttonOfDel,
+  divEl,
+  buttonEl,
+} from "../storage/storage.js";
 
 export const getToList = addEventListener(keydown, function (event) {
   if (event.target == mainInput && event.key == "Enter") {
-
     toListValue(event);
   }
   return;

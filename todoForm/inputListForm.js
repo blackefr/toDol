@@ -1,4 +1,4 @@
-import { getToList } from "./jsFunctions.js";
+import { getToList } from "../functions/jsFunctions.js";
 import {
   checked_main,
   divEl,
@@ -8,7 +8,7 @@ import {
   inputToList,
   startProjectClass,
   textAt,
-} from "./storage.js";
+} from "../storage/storage.js";
 
 export const mainDiv = document.querySelector(`.${startProjectClass}`);
 
